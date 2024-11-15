@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toolbar with Hero Image</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-sans antialiased bg-gray-100">
+
+  <!-- Navbar -->
+  <nav class="bg-[#DFD0B0] shadow-md">
+    <div class="container mx-auto px-4 py-3 flex justify-center items-center">
+      <ul class="flex space-x-6">
+        <li><a href="#" class="text-gray-700 hover:text-blue-600">Home</a></li>
+        <li><a href="#" class="text-gray-700 hover:text-blue-600">About Us</a></li>
+        <li><a href="#" class="text-gray-700 hover:text-blue-600">Past Deep Dive</a></li>
+        <li><a href="#" class="text-gray-700 hover:text-blue-600">Team</a></li>
+        <li><a href="#" class="text-gray-700 hover:text-blue-600">Contact Us</a></li>
+      </ul>
+    </div>
+  </nav>
+  
+  <!-- Hero Section -->
+  <section 
+    class="relative bg-cover bg-center h-screen" 
+    style="background-image: url('https://images.pexels.com/photos/1789968/pexels-photo-1789968.jpeg?cs=srgb&dl=pexels-steve-1789968.jpg&fm=jpg');">
+    <div class="absolute inset-0 bg-[#0E0E0E] bg-opacity-70"></div>
+    <div class="relative z-10 flex items-center justify-center h-full">
+      <div class="text-center text-white max-w-6xl">
+        <h1 class="text-2xl font-normal mb-4">Indian Institute of Management, Kozhikode</h1>
+        <p class="text-5xl font-bold">
+          ECHOS '25
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-black text-gray-300 py-10">
+    <div class="container mx-auto px-20 py-10 grid grid-cols-4 gap-6 text-center lg:text-left">
+      
+      <!-- Contact Section -->
+      <div>
+        <p class="text-sm uppercase mb-2">Get in touch</p>
+        <p class="text-lg font-bold text-white">culcomm@iimklive.com</p>
+      </div>
+  
+      <!-- Social Media Icons -->
+      <div class="flex justify-center space-x-4 lg:justify-start">
+        <a href="#" aria-label="Instagram" class="text-white text-2xl">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="#" aria-label="LinkedIn" class="text-white text-2xl">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="#" aria-label="Facebook" class="text-white text-2xl">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+      </div>
+  
+      <!-- Links Section 1 -->
+      <div>
+        <p class="text-sm uppercase mb-2">Links</p>
+        <ul class="space-y-2">
+          <li><a href="#" class="hover:text-white">Home</a></li>
+          <li><a href="#" class="hover:text-white">Team</a></li>
+          <li><a href="#" class="hover:text-white">Sponsors</a></li>
+        </ul>
+      </div>
+  
+      <!-- Links Section 2 -->
+      <div>
+        <p class="text-sm uppercase mb-2">Explore</p>
+        <ul class="space-y-2">
+          <li><a href="#" class="hover:text-white">Certificates</a></li>
+          <li><a href="#" class="hover:text-white">Events</a></li>
+          <li><a href="#" class="hover:text-white">Workshops</a></li>
+          <li><a href="#" class="hover:text-white">Sports</a></li>
+        </ul>
+      </div>
+  
+      <!-- Links Section 3 -->
+      <div>
+        <p class="text-sm uppercase mb-2">Featured</p>
+        <ul class="space-y-2">
+          <li><a href="#" class="hover:text-white">Ragnarok</a></li>
+          <li><a href="#" class="hover:text-white">Proshow</a></li>
+          <li><a href="#" class="hover:text-white">Prodezza</a></li>
+        </ul>
+      </div>
+  
+    </div>
+  </footer>
+  
+
+</body>
+</html>
