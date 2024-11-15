@@ -1,2 +1,2 @@
 # culcom-web
-Website of cultural committee of IIM Kozhikode
+Website for cultural committee of IIM Kozhikode
