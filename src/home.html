@@ -1,40 +1,194 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Toolbar with Hero Image</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="./output.css" rel="stylesheet">
+  <link href="./Css/animations.css" rel="stylesheet">
+  <script type="module" src="../src/scripts/animations.js"></script>
+
+  <title>ECHOS IIM K</title>
 </head>
-<body class="font-sans antialiased bg-gray-100">
+
+<body class="font-sans bg-black antialiased">
 
   <!-- Navbar -->
-  <nav class="bg-[#DFD0B0] shadow-md">
-    <div class="container mx-auto px-4 py-3 flex justify-center items-center">
+  <nav class="glass-bg fixed z-50">
+    <div class="mx-auto px-4 py-6 flex justify-center items-center">
       <ul class="flex space-x-6">
-        <li><a href="#" class="text-gray-700 hover:text-blue-600">Home</a></li>
-        <li><a href="#" class="text-gray-700 hover:text-blue-600">About Us</a></li>
-        <li><a href="#" class="text-gray-700 hover:text-blue-600">Past Deep Dive</a></li>
-        <li><a href="#" class="text-gray-700 hover:text-blue-600">Team</a></li>
-        <li><a href="#" class="text-gray-700 hover:text-blue-600">Contact Us</a></li>
+        <li><a href="#" class="text-white text-opacity-45 text-lg font-semibold hover:text-white">Home</a></li>
+        <li><a href="#" class="text-white text-opacity-45 text-lg font-semibold hover:text-white">About Us</a></li>
+        <li><a href="#" class="text-white text-opacity-45 text-lg font-semibold hover:text-white">Past Deep Dive</a></li>
+        <li><a href="#" class="text-white text-opacity-45 text-lg font-semibold hover:text-white">Team</a></li>
+        <li><a href="#" class="text-white text-opacity-45 text-lg font-semibold hover:text-white">Contact Us</a></li>
       </ul>
     </div>
   </nav>
+
   
   <!-- Hero Section -->
   <section 
-    class="relative bg-cover bg-center h-screen" 
-    style="background-image: url('https://images.pexels.com/photos/1789968/pexels-photo-1789968.jpeg?cs=srgb&dl=pexels-steve-1789968.jpg&fm=jpg');">
-    <div class="absolute inset-0 bg-[#0E0E0E] bg-opacity-70"></div>
-    <div class="relative z-10 flex items-center justify-center h-full">
-      <div class="text-center text-white max-w-6xl">
-        <h1 class="text-2xl font-normal mb-4">Indian Institute of Management, Kozhikode</h1>
-        <p class="text-5xl font-bold">
-          ECHOS '25
-        </p>
+    class="relative hero bg-cover bg-center h-screen" 
+    style="background-image: url('../images/hero_6.webp');">
+    <div class="absolute backgroundImage inset-0 bg-[#0E0E0E] bg-opacity-0"></div>
+
+
+    
+    <div class="relative  z-10 flex items-center justify-center h-full">
+      <div class="text-center pl-20 text-white max-w-6xl">
+         <div class=" justify-center items-center">
+
+          <svg id="mainSVG" class="mx-auto justify-center items-center"  width="400px" height="auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 778 859">
+            <defs>
+                  <filter id="glow" x="-100%" y="-100%" width="250%" height="250%">
+                    <feGaussianBlur stdDeviation="25" result="coloredBlur" />
+                    <feOffset dx="0" dy="0" result="offsetblur"></feOffset>
+                    <feFlood id="glowAlpha" flood-color="#FFF" flood-opacity="0.31"></feFlood>
+                    <feComposite in2="offsetblur" operator="in"></feComposite>
+                    <feMerge>
+                      <feMergeNode/>          
+                      <feMergeNode in="SourceGraphic"></feMergeNode>
+                    </feMerge>
+                  </filter>	
+                  <clipPath id="mainMask">
+                    <rect width="1080" height="1000" y="40" fill="#09d200"/>
+                  </clipPath>
+          </defs>
+
+            <path id="small_e1" d="M105 51.92H47.5V113.54H105V163.46H47.5V225.08H105V275H0V2H105V51.92Z" fill="black"/>
+            <path id="small_e2" d="M648 51.0057H590.5V111.497H648V160.503H590.5V220.994H648V270H543V2H648V51.0057Z" fill="black"/>
+            <path id="small_e3" d="M648 386.691H590.5V517.154H648V622.846H590.5V753.309H648V859H543V281H648V386.691Z" fill="black"/>
+            <path id="big_c" d="M105 343.92H47.5V405.54H105V455.46H47.5V517.08H105V567H0V294H105V343.92Z" fill="black"/>
+            <path id="small_c" d="M105 635.92H47.5V697.54H105V747.46H47.5V809.08H105V859H0V586H105V635.92Z" fill="black"/>
+            <path id="large_h" d="M228 214.007H182.367V115.295C182.367 111.61 182.915 65.3007 181.5 62.6684C180.321 59.5097 177.651 59.6842 176 59.6842C175 62.6684 171.401 52.7211 171.401 105.819C171.401 116.882 171.401 115.186 171.401 118.871V450.118C171.401 454.33 171.399 449.621 171.401 461.971C171.401 513.284 175.5 507.813 177 508.311C179 508.311 180.321 508.456 181.5 505.824C182.679 502.665 182.367 455.127 182.367 450.915V352.993H228V477.765C228 508.299 223.166 530.937 213.497 545.678C203.828 559.893 191.329 567 176 567C160.671 567 148.172 559.893 138.503 545.678C128.834 530.937 124 508.299 124 477.765V89.2354C124 58.7006 128.834 36.3259 138.503 22.1114C148.172 7.37047 160.671 0 176 0C191.329 0 203.828 7.37047 213.497 22.1114C223.166 36.3259 228 58.7006 228 89.2354V214.007Z" fill="black"/>
+            <path id="big_o" d="M228 689.04H182.367V641.513C182.367 639.738 181.66 638.217 180.245 636.95C179.066 635.429 177.651 634.669 176 634.669C174.349 634.669 172.816 635.429 171.401 636.95C170.222 638.217 169.633 639.738 169.633 641.513V803.107C169.633 805.135 170.222 806.909 171.401 808.43C172.581 809.698 174.113 810.331 176 810.331C177.887 810.331 179.42 809.698 180.599 808.43C181.778 806.909 182.367 805.135 182.367 803.107V755.96H228V816.035C228 830.737 223.166 841.636 213.497 848.734C203.828 855.578 191.329 859 176 859C160.671 859 148.172 855.578 138.503 848.734C128.834 841.636 124 830.737 124 816.035V628.965C124 614.263 128.834 603.49 138.503 596.646C148.172 589.549 160.671 586 176 586C191.329 586 203.828 589.549 213.497 596.646C223.166 603.49 228 614.263 228 628.965V689.04Z" fill="black"/>
+            <path id="small_o" d="M336.5 2H389V859H336.5V507H302.5V859H247V2H302.5V423H336.5V2Z" fill="black"/>
+            <path id="small2_e" d="M522 610.172V821.018C522 846.662 499.376 859 466.115 859C432.854 859 410 846.672 410 821.018V610.172C410 584.528 432.624 572 466.115 572C499.607 572 522 584.528 522 610.172ZM473.36 810.636V620.544C473.36 616.631 470.418 613.696 466.115 613.696C461.593 613.696 458.201 616.631 458.201 620.544V810.636C458.201 814.36 461.593 817.294 466.115 817.294C469.957 817.294 473.36 814.36 473.36 810.636Z" fill="black"/>
+            <path id="big2_e" d="M522 38.3027V523.878C522 548.266 499.376 560 466.115 560C432.854 560 410 548.275 410 523.878V38.3027C410 13.9142 432.624 2 466.115 2C499.607 2 522 13.9142 522 38.3027ZM473.36 514.005V48.1665C473.36 44.445 470.418 41.6539 466.115 41.6539C461.593 41.6539 458.201 44.445 458.201 48.1665V514.005C458.201 517.546 461.593 520.337 466.115 520.337C469.957 520.337 473.36 517.546 473.36 514.005Z" fill="black"/>
+            <path id="small1_s" d="M778 101.908H730.173V54.9025C730.173 53.1476 729.432 51.6435 727.949 50.39C726.713 48.8858 725.23 48.1337 723.5 48.1337C721.77 48.1337 720.163 48.8858 718.68 50.39C717.444 51.6435 716.827 53.1476 716.827 54.9025V102.284L761.316 131.616C772.439 138.886 778 149.164 778 162.451V227.507C778 242.047 772.933 252.827 762.799 259.847C752.666 266.616 739.566 270 723.5 270C707.434 270 694.334 266.616 684.201 259.847C674.067 252.827 669 242.047 669 227.507V168.092H716.827V214.721C716.827 216.727 717.444 218.482 718.68 219.986C719.916 221.24 721.523 221.866 723.5 221.866C725.477 221.866 727.084 221.24 728.32 219.986C729.556 218.482 730.173 216.727 730.173 214.721V167.716L685.684 138.384C674.561 130.864 669 120.585 669 107.549V42.493C669 27.9526 674.067 17.2981 684.201 10.5292C694.334 3.50975 707.434 0 723.5 0C739.566 0 752.666 3.50975 762.799 10.5292C772.933 17.2981 778 27.9526 778 42.493V101.908Z" fill="black"/>
+            <path id="small2_s" d="M778 386.305H730.173V337.733C730.173 335.919 729.432 334.365 727.949 333.07C726.713 331.515 725.23 330.738 723.5 330.738C721.77 330.738 720.163 331.515 718.68 333.07C717.444 334.365 716.827 335.919 716.827 337.733V386.694L761.316 417.003C772.439 424.515 778 435.136 778 448.866V516.091C778 531.116 772.933 542.255 762.799 549.508C752.666 556.503 739.566 560 723.5 560C707.434 560 694.334 556.503 684.201 549.508C674.067 542.255 669 531.116 669 516.091V454.695H716.827V502.879C716.827 504.951 717.444 506.765 718.68 508.319C719.916 509.614 721.523 510.262 723.5 510.262C725.477 510.262 727.084 509.614 728.32 508.319C729.556 506.765 730.173 504.951 730.173 502.879V454.306L685.684 423.997C674.561 416.226 669 405.604 669 392.134V324.909C669 309.884 674.067 298.875 684.201 291.88C694.334 284.627 707.434 281 723.5 281C739.566 281 752.666 284.627 762.799 291.88C772.933 298.875 778 309.884 778 324.909V386.305Z" fill="black"/>
+            <path id="small3_s" d="M778 689.04H730.173V641.513C730.173 639.738 729.432 638.217 727.949 636.95C726.713 635.429 725.23 634.669 723.5 634.669C721.77 634.669 720.163 635.429 718.68 636.95C717.444 638.217 716.827 639.738 716.827 641.513V689.421L761.316 719.078C772.439 726.429 778 736.822 778 750.256V816.035C778 830.737 772.933 841.636 762.799 848.734C752.666 855.578 739.566 859 723.5 859C707.434 859 694.334 855.578 684.201 848.734C674.067 841.636 669 830.737 669 816.035V755.96H716.827V803.107C716.827 805.135 717.444 806.909 718.68 808.43C719.916 809.698 721.523 810.331 723.5 810.331C725.477 810.331 727.084 809.698 728.32 808.43C729.556 806.909 730.173 805.135 730.173 803.107V755.579L685.684 725.922C674.561 718.318 669 707.925 669 694.744V628.965C669 614.263 674.067 603.49 684.201 596.646C694.334 589.549 707.434 586 723.5 586C739.566 586 752.666 589.549 762.799 596.646C772.933 603.49 778 614.263 778 628.965V689.04Z" fill="black"/>
+
+          </svg>
+
+         
+
+            <div class="line transform scale-x-0 origin-center mt-4 w-full bg-white h-0.5"></div>
+
+            <h1 class="text-4xl mt-4 text-[#EBE6D0] shadow-md font-normal mb-4 animate-slideUp">
+              Indian Institute of Management, Kozhikode
+            </h1>    
+          
+        </div>
       </div>
+
     </div>
+
   </section>
+
+
+  <!-- About Section -->
+  <section class="bg-black about">
+
+    <div class="flex h-[400px]" >
+
+      <div class="px-8 w-1/2 py-10 shadow-md">
+
+        <div>
+          <div class="text-center"><h1 class="text-purple-700 font-bold text-3xl mb-4">ABOUT <span class="text-gray-600 ">US!</span></h1> </div> 
+          <p class="text-xl font-semibold mb-4">The Cultural Committee, IIM Kozhikode</p>
+          <p class="text-gray-600 text-left text-base leading-relaxed">
+            At IIM Kozhikode, one of India’s most prestigious management institutes and 
+            <span class="font-bold">ranked NIRF #3</span>, the Cultural Committee serves as the 
+            <span class="font-bold">epicenter of student life</span>, bringing vibrancy and unity 
+            to our campus through diverse cultural events throughout the year!
+          </p>
+        </div>
+       
+        <div>
+          <p class="text-gray-600 text-base leading-relaxed mt-4">
+            With <span class="font-bold">10 years of experience</span> under our belt, we have conducted 
+            <span class="font-bold">100+ events</span> that create memorable experiences to bring students together
+            and promote holistic growth
+          </p>
+        </div>
+
+      </div>
+
+      <div class="w-1/2 h-auto bg-[#b43838] bg-blend-multiply bg-[url('../images/section_2.png')]">
+        
+      </div>
+
+  </section>
+
+  <!-- Section 3 -->
+  <section class="bg-black section3">
+
+    <div class="flex h-[400px]" >
+
+      <div class="px-8 w-1/2 py-10 shadow-md">
+
+        <div>
+          <div class="text-center"><h1 class="text-purple-700 font-bold text-3xl mb-4">ABOUT <span class="text-gray-600 ">US!</span></h1> </div> 
+          <p class="text-xl font-semibold mb-4">The Cultural Committee, IIM Kozhikode</p>
+          <p class="text-gray-600 text-left text-base leading-relaxed">
+            At IIM Kozhikode, one of India’s most prestigious management institutes and 
+            <span class="font-bold">ranked NIRF #3</span>, the Cultural Committee serves as the 
+            <span class="font-bold">epicenter of student life</span>, bringing vibrancy and unity 
+            to our campus through diverse cultural events throughout the year!
+          </p>
+        </div>
+       
+        <div>
+          <p class="text-gray-600 text-base leading-relaxed mt-4">
+            With <span class="font-bold">10 years of experience</span> under our belt, we have conducted 
+            <span class="font-bold">100+ events</span> that create memorable experiences to bring students together
+            and promote holistic growth
+          </p>
+        </div>
+
+      </div>
+
+      <div class="w-1/2 h-auto bg-[#b43838] bg-blend-multiply bg-[url('../images/section_2.png')]">
+        
+      </div>
+
+  </section>
+
+  <!-- Section4 -->
+  <section class="bg-black section4">
+
+    <div class="flex h-[400px]" >
+
+      <div class="px-8 w-1/2 py-10 shadow-md">
+
+        <div>
+          <div class="text-center"><h1 class="text-purple-700 font-bold text-3xl mb-4">ABOUT <span class="text-gray-600 ">US!</span></h1> </div> 
+          <p class="text-xl font-semibold mb-4">The Cultural Committee, IIM Kozhikode</p>
+          <p class="text-gray-600 text-left text-base leading-relaxed">
+            At IIM Kozhikode, one of India’s most prestigious management institutes and 
+            <span class="font-bold">ranked NIRF #3</span>, the Cultural Committee serves as the 
+            <span class="font-bold">epicenter of student life</span>, bringing vibrancy and unity 
+            to our campus through diverse cultural events throughout the year!
+          </p>
+        </div>
+       
+        <div>
+          <p class="text-gray-600 text-base leading-relaxed mt-4">
+            With <span class="font-bold">10 years of experience</span> under our belt, we have conducted 
+            <span class="font-bold">100+ events</span> that create memorable experiences to bring students together
+            and promote holistic growth
+          </p>
+        </div>
+
+      </div>
+
+      <div class="w-1/2 h-auto bg-[#b43838] bg-blend-multiply bg-[url('../images/section_2.png')]">
+        
+      </div>
+
+  </section>
+
 
   <footer class="bg-black text-gray-300 py-10">
     <div class="container mx-auto px-20 py-10 grid grid-cols-4 gap-6 text-center lg:text-left">
@@ -92,6 +246,5 @@
     </div>
   </footer>
   
-
 </body>
 </html>
