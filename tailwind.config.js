@@ -3,6 +3,9 @@ module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
     extend: {
+      fontFamily: {
+        lobster: ['Lobster', 'cursive'], // 'cursive' as fallback
+      },
       colors: {
         'gradient-start': '#133F95',
         'gradient-end': '#CCFCFD',
@@ -19,18 +22,6 @@ module.exports = {
         flyRight: "flyRight 15s linear infinite",
       },
       keyframes: {
-        flyCycle: {
-          "100%": { "background-position": "-900px 0" },
-        },
-        flyRight: {
-          "0%": { transform: "scale(0.3) translateX(-10vw)" },
-          "10%": { transform: "translateY(2vh) translateX(10vw) scale(0.4)" },
-          "20%": { transform: "translateY(0vh) translateX(30vw) scale(0.5)" },
-          "30%": { transform: "translateY(4vh) translateX(50vw) scale(0.6)" },
-          "40%": { transform: "translateY(2vh) translateX(70vw) scale(0.6)" },
-          "50%": { transform: "translateY(0vh) translateX(90vw) scale(0.6)" },
-          "100%": { transform: "translateY(0vh) translateX(110vw) scale(0.6)" },
-        },
         fadeIn: {
           '0%': { opacity: '0' },
           '100%': { opacity: '1' },
