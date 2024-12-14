@@ -930,6 +930,18 @@ video {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
 
+.bg-\[url\(\'images\/nitee_bg\.gif\'\)\] {
+  background-image: url('images/nitee_bg.gif');
+}
+
+.bg-\[url\(\'images\/section_2\.png\'\)\] {
+  background-image: url('images/section_2.png');
+}
+
+.bg-\[url\(\'images\/scattered-forcefields\.svg\'\)\] {
+  background-image: url('images/scattered-forcefields.svg');
+}
+
 .from-\[\#D66D75\] {
   --tw-gradient-from: #D66D75 var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(214 109 117 / 0) var(--tw-gradient-to-position);
@@ -1401,6 +1413,10 @@ video {
 
   .md\:bg-\[url\(\'\.\.\/images\/hero_6\.webp\'\)\] {
     background-image: url('../images/hero_6.webp');
+  }
+
+  .md\:bg-\[url\(\'images\/hero_6\.webp\'\)\] {
+    background-image: url('images/hero_6.webp');
   }
 
   .md\:bg-cover {
