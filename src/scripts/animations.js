@@ -139,11 +139,11 @@ gsap.fromTo(".about-text",
 gsap.fromTo(".scroll-animation-experience",
     {
         opacity:0,
-        x:-400,
+        x:-window.innerWidth * 0.5,
     },
     {
         opacity:1,
-        x:35,
+        x:0,
         duration: 5,
         ease: "power2.out",
         scrollTrigger: {
@@ -156,7 +156,7 @@ gsap.fromTo(".scroll-animation-experience",
 )
 
 
-// GSAP: animation courousal
+// GSAP: animation for courousal
 document.addEventListener("DOMContentLoaded", () => {
     const carousel = document.querySelector("#carousel");
     const slides = document.querySelectorAll("#carousel > div");
@@ -169,7 +169,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const isLaptopOrTablet = window.innerWidth >= 768;  // This can be adjusted for your breakpoints
 
     if (isLaptopOrTablet) {
-        // Create a GSAP timeline
         const tl = gsap.timeline({
             repeat: -1,  // Infinite repeat
             defaults: { ease: "power1.inOut", duration: 2 },
@@ -179,7 +178,7 @@ document.addEventListener("DOMContentLoaded", () => {
         slides.forEach((_, i) => {
             tl.to(carousel, {
                 x: `-${i * slideWidth}px`,
-                duration: 2,
+                duration: 3,
             });
         });
 
@@ -191,14 +190,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // Start the animation
         tl.play();
-    }
+    
 
     // Stop animation on user interaction
     function stopAnimation() {
         if (isAnimating) {
             tl.pause(); // Pause the timeline
             isAnimating = false; // Mark auto-slide as stopped
-            console.log("Auto-slide stopped");
+            alert('paused')
         }
     }
 
@@ -227,10 +226,19 @@ document.addEventListener("DOMContentLoaded", () => {
             gsap.to(carousel, { x: prevX, duration: 1 });
         }
     }
+    
+    carousel.addEventListener("mouseenter", () => {
+        tl.pause(); // Pause the GSAP timeline on hover
+    });
+    
+    carousel.addEventListener("mouseleave", () => {
+        tl.play(); // Resume the GSAP timeline when hover ends
+    });
+    }
 
-    // Attach event listeners
-    nextBtn.addEventListener("click", nextSlide);
-    prevBtn.addEventListener("click", prevSlide);
+    // // Attach event listeners
+    // nextBtn.addEventListener("click", nextSlide);
+    // prevBtn.addEventListener("click", prevSlide);
 });
 
 
