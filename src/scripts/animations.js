@@ -155,6 +155,15 @@ gsap.fromTo(".scroll-animation-experience",
     }
 )
 
+gsap.to(".glow-text", {
+    textShadow: "0 0 60px #ff00ff, 0 0 60px #ff00ff, 0 0 60px #ff00ff, 0 0 80px #ff00ff",
+    duration: 2,
+    repeat: -1, // Infinite loop
+    yoyo: true, // Animate back and forth
+    ease: "power1.inOut", // Smooth easing
+});
+
+
 
 // GSAP: animation for courousal
 document.addEventListener("DOMContentLoaded", () => {
