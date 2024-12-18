@@ -785,16 +785,6 @@ video {
   animation: slideUp 2s ease-in-out;
 }
 
-@keyframes blink {
-  50% {
-    border-color: transparent;
-  }
-}
-
-.animate-blink {
-  animation: blink 0.5s step-end infinite;
-}
-
 .cursor-pointer {
   cursor: pointer;
 }
@@ -914,32 +904,20 @@ video {
   --tw-bg-opacity: 0.85;
 }
 
-.bg-\[url\(\'\.\.\/images\/nitee_bg\.gif\'\)\] {
-  background-image: url('../images/nitee_bg.gif');
-}
-
-.bg-\[url\(\'\.\.\/images\/scattered-forcefields\.svg\'\)\] {
-  background-image: url('../images/scattered-forcefields.svg');
-}
-
-.bg-\[url\(\'\.\.\/images\/section_2\.png\'\)\] {
-  background-image: url('../images/section_2.png');
-}
-
-.bg-gradient-to-r {
-  background-image: linear-gradient(to right, var(--tw-gradient-stops));
-}
-
 .bg-\[url\(\'images\/nitee_bg\.gif\'\)\] {
   background-image: url('images/nitee_bg.gif');
+}
+
+.bg-\[url\(\'images\/scattered-forcefields\.svg\'\)\] {
+  background-image: url('images/scattered-forcefields.svg');
 }
 
 .bg-\[url\(\'images\/section_2\.png\'\)\] {
   background-image: url('images/section_2.png');
 }
 
-.bg-\[url\(\'images\/scattered-forcefields\.svg\'\)\] {
-  background-image: url('images/scattered-forcefields.svg');
+.bg-gradient-to-r {
+  background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
 
 .from-\[\#D66D75\] {
@@ -1199,9 +1177,9 @@ video {
   color: rgb(235 230 208 / var(--tw-text-opacity, 1));
 }
 
-.text-\[\#F042C8\] {
+.text-\[\#EF5595\] {
   --tw-text-opacity: 1;
-  color: rgb(240 66 200 / var(--tw-text-opacity, 1));
+  color: rgb(239 85 149 / var(--tw-text-opacity, 1));
 }
 
 .text-\[\#fdeee5\] {
@@ -1246,15 +1224,6 @@ video {
 .text-yellow-200 {
   --tw-text-opacity: 1;
   color: rgb(254 240 138 / var(--tw-text-opacity, 1));
-}
-
-.text-\[\#\#EF5595\] {
-  color: ##EF5595;
-}
-
-.text-\[\#EF5595\] {
-  --tw-text-opacity: 1;
-  color: rgb(239 85 149 / var(--tw-text-opacity, 1));
 }
 
 .text-opacity-100 {
@@ -1409,10 +1378,6 @@ video {
     --tw-space-y-reverse: 0;
     margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(0px * var(--tw-space-y-reverse));
-  }
-
-  .md\:bg-\[url\(\'\.\.\/images\/hero_6\.webp\'\)\] {
-    background-image: url('../images/hero_6.webp');
   }
 
   .md\:bg-\[url\(\'images\/hero_6\.webp\'\)\] {
