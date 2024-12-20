@@ -7,6 +7,7 @@ export default defineConfig({
   },
   build: {
     outDir: '../dist',  // Output directory for the build
+    assetsDir: 'assets',
     rollupOptions: {
       input: {
         main: './src/home.html',
