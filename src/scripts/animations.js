@@ -166,7 +166,7 @@ gsap.to(".glow-text", {
 
 
 // GSAP: animation for courousal
-document.addEventListener("DOMContentLoaded", () => {
+//document.addEventListener("DOMContentLoaded", () => {
     const carousel = document.querySelector("#carousel");
     const slides = document.querySelectorAll("#carousel > div");
     const prevBtn = document.querySelector(".prevBtn");
@@ -248,7 +248,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // // Attach event listeners
     // nextBtn.addEventListener("click", nextSlide);
     // prevBtn.addEventListener("click", prevSlide);
-});
+//});
 
 
 
