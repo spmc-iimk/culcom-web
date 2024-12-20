@@ -5,6 +5,7 @@ export default defineConfig({
   server: {
     open: true, // Automatically open the browser on server start
   },
+  publicDir: 'src/css',
   build: {
     outDir: '../dist',  // Output directory for the build
     assetsDir: 'assets',
