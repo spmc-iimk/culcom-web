@@ -58,43 +58,43 @@ gsap.to(".line", {
  });
 
 // GSAP: ECHOS Color Animation
-gsap.config({trialWarn: false});
-    let select = s => document.querySelector(s),
-    toArray = s => gsap.utils.toArray(s),
-    colorArray = ["fbe46c","fe987b","d569fa","5f88ea","63cdeb", "afff8a", "fbe46c"],
-    allPaths = toArray('path')
+ gsap.config({trialWarn: false});
+let select = s => document.querySelector(s),
+toArray = s => gsap.utils.toArray(s),
+colorArray = ["fbe46c","fe987b","d569fa","5f88ea","63cdeb", "afff8a", "fbe46c"],
+allPaths = toArray('#echoesSVG path')
 
-    colorArray = colorArray.map(x => Array.from(x)[0] == '#' ? x : `#${x}`);
-    const interp = gsap.utils.interpolate(colorArray);
+colorArray = colorArray.map(x => Array.from(x)[0] == '#' ? x : `#${x}`);
+const interp = gsap.utils.interpolate(colorArray);
 
-    let colorTl = gsap.timeline();
-    colorTl.to(allPaths, {
-        fill: '#fff',
-        duration: 0.25 * colorArray.length,
-        modifiers: {
-            fill: function() {
-        return interp(this.ratio);
-        }
-        },
-        stagger: {
-            each: 0.05,
-            repeat: -1
-        },
-        ease: 'sine.inOut'
-    }).seek(100)
-    .to('#glowAlpha', {
-        floodColor: '#fff',
-        duration: 0.25 * colorArray.length,
-        modifiers: {
-            floodColor: function() {
-        return interp(this.ratio);
-        }
-        },
-        stagger: {
-            each: 0.05,
-            repeat: -1
-        },
-        ease: 'sine.inOut'
+let colorTl = gsap.timeline();
+colorTl.to(allPaths, {
+    fill: '#fff',
+    duration: 0.25 * colorArray.length,
+    modifiers: {
+        fill: function() {
+    return interp(this.ratio);
+    }
+    },
+    stagger: {
+        each: 0.05,
+        repeat: -1
+    },
+    ease: 'sine.inOut'
+}).seek(100)
+.to('#glowAlpha', {
+    floodColor: '#fff',
+    duration: 0.25 * colorArray.length,
+    modifiers: {
+        floodColor: function() {
+    return interp(this.ratio);
+    }
+    },
+    stagger: {
+        each: 0.05,
+        repeat: -1
+    },
+    ease: 'sine.inOut'
 }, 0).seek(100)
 
 

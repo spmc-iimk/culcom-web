@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <script type="module" src="./scripts/menu.js"></script>
   <script type="module" src="./scripts/animations.js"></script>
   <script type="module" src="./scripts/loader.js"></script>
   <title>ECHOS IIM K</title>
@@ -23,29 +24,60 @@
   </div>
 
   <!-- Navbar -->
-  <nav class="glass-bg fixed z-50">
-    <div class="mx-auto px-4 py-6 flex justify-center items-center">
+  <nav class="fixed md:glass-bg z-50 w-full">
+
+    <!-- Desktop Navbar -->
+    <div class="hidden md:flex mx-auto px-4 py-6 justify-center items-center">
       <ul class="flex space-x-6">
         <li><a href="./home.html" class="text-white text-opacity-100 text-sm md:text-lg font-semibold hover:text-white">Home</a></li>
-        <li><a onclick="goToAboutUs()" class="text-white  cursor-pointer text-opacity-45 text-sm md:text-lg font-semibold hover:text-white">About Us</a></li>
-        <li><a onclick="goToPastDeepDive()" class="text-white cursor-pointer  text-opacity-45 text-sm md:text-lg  font-semibold hover:text-white">Past Deep Dive</a></li>
-        <li><a href="./team.html" class="text-white text-opacity-45 text-sm md:text-lg  font-semibold hover:text-white">Team</a></li>
-        <li><a href="./contact-us.html" class="text-white text-opacity-45 text-sm md:text-lg  font-semibold hover:text-white">Contact Us</a></li>
+        <li><a onclick="goToAboutUs()" class="text-white cursor-pointer text-opacity-45 text-sm md:text-lg font-semibold hover:text-white">About Us</a></li>
+        <li><a onclick="goToPastDeepDive()" class="text-white cursor-pointer text-opacity-45 text-sm md:text-lg font-semibold hover:text-white">Past Deep Dive</a></li>
+        <li><a href="./team.html" class="text-white text-opacity-45 text-sm md:text-lg font-semibold hover:text-white">Team</a></li>
+        <li><a href="./contact-us.html" class="text-white text-opacity-45 text-sm md:text-lg font-semibold hover:text-white">Contact Us</a></li>
       </ul>
     </div>
-  </nav>
 
+    <!-- Mobile Menu Toggle Button -->
+    <div class="flex items-center lg:order-2">
+      <button onclick="open_mobile_menu()" type="button" 
+          class="inline-flex items-center p-2 ml-1 text-sm text-white rounded-lg lg:hidden focus:outline-none focus:ring-2 focus:ring-white" 
+          aria-controls="Mobile_ContextMenu" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <!-- Hamburger Icon -->
+          <svg id="hamburger-icon" class="w-6 h-6" fill="white" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+          </svg>
+          <!-- Close Icon -->
+          <svg id="close-icon" class="hidden w-6 h-6" fill="white" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+          </svg>
+      </button>
+    </div>
+  
+
+    <!-- Mobile Menu -->
+    <section id="Mobile_ContextMenu" class="hidden bg-black mt-2 z-10 fixed w-screen shadow-lg border-solid border-black p-6">
+      <ul class="flex flex-col space-y-2">
+        <li><a href="./home.html" class="text-white text-opacity-100 text-sm md:text-lg font-semibold hover:text-white">Home</a></li>
+        <li><a onclick="goToAboutUs()" class="text-white cursor-pointer text-opacity-45 text-sm md:text-lg font-semibold hover:text-white">About Us</a></li>
+        <li><a onclick="goToPastDeepDive()" class="text-white cursor-pointer text-opacity-45 text-sm md:text-lg font-semibold hover:text-white">Past Deep Dive</a></li>
+        <li><a href="./team.html" class="text-white text-opacity-45 text-sm md:text-lg font-semibold hover:text-white">Team</a></li>
+        <li><a href="./contact-us.html" class="text-white text-opacity-45 text-sm md:text-lg font-semibold hover:text-white">Contact Us</a></li>
+      </ul>
+    </section>
+
+  </nav>
+ 
   
   <!-- Hero Section -->
   <section  class="hero relative bg-cover bg-center h-screen" 
     style="background-image: url('images/hero_13.JPG');">
     <div class="absolute backgroundImage inset-0 bg-[#0E0E0E] bg-opacity-10"></div>
 
-    
     <div class="relative w-fit mx-auto z-10 flex items-center justify-center h-full">
       <div class="text-center justify-center items-center text-white max-w-6xl">
      
-        <svg id="mainSVG" class="mx-auto w-[200px] md:w-[400px] justify-center items-center" height="450px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 778 859">
+        <svg id="echoesSVG" class="mx-auto w-[200px] md:w-[400px] justify-center items-center" height="450px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 778 859">
           <defs>
                 <filter id="glow" x="-100%" y="-100%" width="250%" height="250%">
                   <feGaussianBlur stdDeviation="25" result="coloredBlur" />
@@ -92,16 +124,16 @@
   </section>
 
   <!--Experience-->
-  <section class="h-[600px] justify-center items-center section1 text-center" >
+  <section class="h-[300px] lg:h-[600px] justify-center items-center section1 text-center" >
 
     <div class="text-white hidden lg:block align-middle mt-[300px] scroll-animation-experience py-10 font-bold text-5xl">
       <div class="text-transparent glow-text text-2xl md:text-5xl lg:text-8xl bg-clip-text bg-gradient-to-r from-[#fbe46c] via-[#fe987b] to-pink-500">Experience</div>
       <div class="md:pt-5 font-medium text-lg md:text-4xl">the kaleidoscope of dance, music, fashion, art and pronites</div>
     </div>
 
-    <div class="text-white block lg:hidden align-middle mt-[300px] py-10 font-bold text-5xl">
-      <div class="text-transparent text-2xl md:text-5xl lg:text-8xl bg-clip-text bg-gradient-to-r from-[#fbe46c] via-[#fe987b] to-pink-500">Experience</div>
-      <div class="md:pt-5 font-medium text-lg md:text-4xl">the kaleidoscope of dance, music, fashion, art and pronites</div>
+    <div class="text-white block lg:hidden align-middle mt-[300px] scroll-animation-experience py-10 font-bold text-5xl">
+      <div class="text-transparent glow-text text-4xl md:text-5xl lg:text-8xl bg-clip-text bg-gradient-to-r from-[#fbe46c] via-[#fe987b] to-pink-500">Experience</div>
+      <div class="md:pt-5 pt-2 px-5 font-medium text-lg md:text-4xl">the kaleidoscope of dance, music, fashion, art and pronites</div>
     </div>
 
 
@@ -112,11 +144,11 @@
 
     <div class="flex h-fit lg:h-[500px]">
 
-      <div class="px-8 about-text lg:w-1/2 py-10 shadow-md">
+      <div class="px-8  about-text lg:w-1/2 py-10 shadow-md">
 
         <div>
           <div class="text-transparent w-fit mx-auto text-center font-extrabold text-4xl bg-clip-text bg-gradient-to-r from-[#fe987b]  to-pink-500">ABOUT US</div>
-          <p class="text-white text-lg pt-5 opacity-70 text-left leading-relaxed">
+          <p class="text-white text-lg pt-5 opacity-70 text-center lg:text-centerleading-relaxed">
             At IIM Kozhikode, one of India’s most prestigious management institutes and 
             <span class="font-bold glow-text text-[#EF5595] ">ranked NIRF #3</span>, the Cultural Committee serves as the 
             <span class="font-bold ">epicenter of student life</span>, bringing vibrancy and unity 
@@ -125,7 +157,7 @@
         </div>
        
         <div>
-          <p class="text-white text-lg pt-5 opacity-70 text-left leading-relaxed">
+          <p class="text-white text-lg pt-5 opacity-70 text-center lg:text-center leading-relaxed">
             With <span class="font-bold">10 years of experience</span> under our belt, we have conducted 
             <span class="font-bold">100+ events</span> that create memorable experiences to bring students together
             and promote holistic growth
@@ -136,7 +168,7 @@
 
       <!--add echos logo-->
    
-      <div class="w-1/2 h-auto bg-[#b43838] bg-blend-multiply bg-[url('images/section_2.png')]"></div>
+      <div class="w-1/2 h-auto hidden lg:block bg-[#b43838] bg-blend-multiply bg-[url('images/section_2.png')]"></div>
 
 
   </section>
@@ -144,7 +176,7 @@
   <!-- Past Deep Dive - Corousal -->
   <section id="past_deep_dive" class="bg-black py-44 section3 h-fit grid place-items-center md:bg-[url('images/hero_6.webp')] md:bg-cover">
 
-    <div class="text-xl pb-20 md:text-7xl font-lobster text-transparent text-stroke bg-clip-text bg-gradient-to-r from-[#fbe46c] via-[#fe987b] to-pink-500">Past deep dive</div>
+    <div class="text-4xl pb-20 md:text-7xl font-lobster text-transparent text-stroke bg-clip-text bg-gradient-to-r from-[#fbe46c] via-[#fe987b] to-pink-500">Past deep dive</div>
 
     <div class="md:w-4/5 justify-center align-middle  overflow-x-hidden mx-20">
       <!-- <button #prevBtn class="prevBtn hidden lg:block absolute left-8 px-4 py-2 bg-gray-200 rounded hover:bg-gray-300">Prev</button> -->
@@ -233,7 +265,7 @@
   <!-- Pronite Events -->
   <section class=" bg-black h-fit py-44 events_section flex flex-col justify-center  place-items-center bg-[url('images/nitee_bg.gif')] bg-cover ">
 
-    <div class="text-white font-lobster mb-20 text-xl md:text-7xl">Pronite Shows</div>
+    <div class="text-white font-lobster mb-20 text-4xl md:text-7xl">Pronite Shows</div>
     
     <div class="lg:flex px-6 lg:px-0 lg:space-y-0 space-y-10 lg:gap-10">
 

@@ -5,7 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./output.css" rel="stylesheet">
   <link href="/css/loader.css" rel="stylesheet">
-  <script type="module" src="./scripts/loader.js"></script>  <title>ECHOS IIM K</title>
+  <script type="module" src="./scripts/menu.js"></script>
+  <script type="module" src="./scripts/loader.js"></script>
+  <title>ECHOS IIM K</title>
 </head>
 
 <body class="font-sans bg-black antialiased">
@@ -18,127 +20,158 @@
   </div>
 
     <!-- Navbar -->
-    <nav class="glass-bg fixed z-50">
-      <div class="mx-auto px-4 py-6 flex justify-center items-center">
-        <ul class="flex space-x-6">
-          <li><a href="./home.html" class="text-white text-opacity-45 text-lg font-semibold hover:text-white">Home</a></li>
-          <li><a href="./team.html" class="text-white text-opacity-45 text-lg font-semibold hover:text-white">Team</a></li>
-          <li><a href="./contact-us.html" class="text-white text-opacity-100 text-lg font-semibold hover:text-white">Contact Us</a></li>
-        </ul>
-      </div>
-    </nav>
+    <nav class="fixed md:glass-bg z-50 w-full">
 
-  <section class="p-20 pt-40">
-    <div class="text-center mb-10">
-      <div class="text-transparent w-fit mx-auto text-center font-extrabold text-4xl bg-clip-text bg-gradient-to-r from-[#fe987b]  to-pink-500">CONTACT US</div>
-      <p class="mt-2 text-white opacity-70">Feel free to approach us if you have any questions.</p>
-    </div>
-  
-    <!-- Contact Cards -->
-    <div class="md:grid space-y-10 md:space-y-0 md:grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
-      <!-- Naman Agrawal -->
-      <div class="bg-white shadow-md rounded-lg p-6">
-        <h3 class="text-lg font-semibold mb-2">NAMAN AGRAWAL</h3>
-        <p class="flex items-center mb-2">
-          <span class="material-icons text-gray-500 mr-2">phone</span>
-          +91-8890656549
-        </p>
-        <p class="flex items-center">
-          <span class="material-icons text-gray-500 mr-2">email</span>
-          <a href="mailto:namana27@iimklive.com" class="text-purple-500  hover:underline">namana27@iimklive.com</a>
-        </p>
+      <!-- Desktop Navbar -->
+      <div class="hidden md:flex mx-auto px-4 py-6 justify-center items-center">
+      <ul class="flex space-x-6">
+          <li><a href="./home.html" class="text-white text-opacity-45 text-sm md:text-lg font-semibold hover:text-white">Home</a></li>
+          <li><a href="./team.html" class="text-white text-opacity-45 text-sm md:text-lg font-semibold hover:text-white">Team</a></li>
+          <li><a href="./contact-us.html" class="text-white text-opacity-100 text-sm md:text-lg font-semibold hover:text-white">Contact Us</a></li>
+      </ul>
       </div>
-      
-      <!-- S Nivetha -->
-      <div class="bg-white shadow-md rounded-lg p-6">
-        <h3 class="text-lg font-semibold mb-2">S NIVETHA</h3>
-        <p class="flex items-center mb-2">
-          <span class="material-icons text-gray-500 mr-2">phone</span>
-          +91-9176318668
-        </p>
-        <p class="flex items-center">
-          <span class="material-icons text-gray-500 mr-2">email</span>
-          <a href="mailto:nivethas27@iimklive.com" class="text-purple-500 hover:underline">nivethas27@iimklive.com</a>
-        </p>
-      </div>
-      
-      <!-- Gunja Agarwal -->
-      <div class="bg-white  shadow-md rounded-lg p-6">
-        <h3 class="text-lg font-semibold mb-2">GUNJA AGARWAL</h3>
-        <p class="flex items-center mb-2">
-          <span class="material-icons text-gray-500 mr-2">phone</span>
-          +91-7457818955
-        </p>
-        <p class="flex items-center">
-          <span class="material-icons text-gray-500 mr-2">email</span>
-          <a href="mailto:gunjaa27@iimklive.com" class="text-purple-500 hover:underline">gunjaa27@iimklive.com</a>
-        </p>
-      </div>
-  
-      <!-- Ishita Shukla -->
-      <div class="bg-white  shadow-md rounded-lg p-6">
-        <h3 class="text-lg font-semibold mb-2">ISHITA SHUKLA</h3>
-        <p class="flex items-center mb-2">
-          <span class="material-icons text-gray-500 mr-2">phone</span>
-          +91-9354609171
-        </p>
-        <p class="flex items-center">
-          <span class="material-icons text-gray-500 mr-2">email</span>
-          <a href="mailto:ishitas28@iimklive.com" class="text-purple-500 hover:underline">ishitas28@iimklive.com</a>
-        </p>
-      </div>
-  
-      <!-- Tanvi More -->
-      <div class="bg-white shadow-md rounded-lg p-6">
-        <h3 class="text-lg font-semibold mb-2">TANVI MORE</h3>
-        <p class="flex items-center mb-2">
-          <span class="material-icons text-gray-500 mr-2">phone</span>
-          +91-9930554112
-        </p>
-        <p class="flex items-center">
-          <span class="material-icons text-gray-500 mr-2">email</span>
-          <a href="mailto:tanvim28@iimklive.com" class="text-purple-500 hover:underline">tanvim28@iimklive.com</a>
-        </p>
-      </div>
-  
-      <!-- Maniratnn Parakh -->
-      <div class="bg-white shadow-md rounded-lg p-6">
-        <h3 class="text-lg font-semibold mb-2">MANIRATNN PARAKH</h3>
-        <p class="flex items-center mb-2">
-          <span class="material-icons text-gray-500 mr-2">phone</span>
-          +91-8305083028
-        </p>
-        <p class="flex items-center">
-          <span class="material-icons text-gray-500 mr-2">email</span>
-          <a href="mailto:maniratnnp28@iimklive.com" class="text-purple-500 hover:underline">maniratnnp28@iimklive.com</a>
-        </p>
-      </div>
-    </div>
-  
-    <!-- Social Links -->
-    <div class="md:flex items-center justify-center md:space-y-0 space-y-10 md:space-x-10">
 
-      <div class="text-center">
-        <a href="mailto:culcom@iimk.ac.in" class="block text-white opacity-70 hover:text-purple-500">
-          <img src="https://img.icons8.com/color/48/gmail-new.png" alt="Gmail" class="mx-auto w-12 h-12">
-          culcom@iimk.ac.in
-        </a>
+      <!-- Mobile Menu Toggle Button -->
+      <div class="flex items-center lg:order-2">
+      <button onclick="open_mobile_menu()" type="button" 
+          class="inline-flex items-center p-2 ml-1 text-sm text-white rounded-lg lg:hidden focus:outline-none focus:ring-2 focus:ring-white" 
+          aria-controls="Mobile_ContextMenu" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <!-- Hamburger Icon -->
+          <svg id="hamburger-icon" class="w-6 h-6" fill="white" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+          </svg>
+          <!-- Close Icon -->
+          <svg id="close-icon" class="hidden w-6 h-6" fill="white" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+          </svg>
+      </button>
       </div>
-      <div class="text-center">
-        <a href="https://www.facebook.com/echoes.iimk/" class="block text-white opacity-70 hover:text-purple-500">
-          <img src="https://img.icons8.com/color/48/facebook-new.png" alt="Facebook" class="mx-auto w-12 h-12">
-          facebook.com/echoes.iimk
-        </a>
+
+
+      <!-- Mobile Menu -->
+      <section id="Mobile_ContextMenu" class="hidden bg-black mt-2 z-10 fixed w-screen shadow-lg border-solid border-black p-6">
+      <ul class="flex flex-col space-y-2">
+          <li><a href="./home.html" class="text-white text-opacity-45 text-sm md:text-lg font-semibold hover:text-white">Home</a></li>
+          <li><a href="./team.html" class="text-white text-opacity-45 text-sm md:text-lg font-semibold hover:text-white">Team</a></li>
+          <li><a href="./contact-us.html" class="text-white text-opacity-100 text-sm md:text-lg font-semibold hover:text-white">Contact Us</a></li>
+      </ul>
+      </section>
+
+  </nav>
+
+    <section class="p-10 sm:p-16 lg:p-20 pt-20 sm:pt-32 lg:pt-40">
+      <div class="text-center mb-10">
+        <div class="text-transparent w-fit mx-auto text-center font-extrabold text-2xl sm:text-3xl lg:text-4xl bg-clip-text bg-gradient-to-r from-[#fe987b] to-pink-500">
+          CONTACT US
+        </div>
+        <p class="mt-2 text-white opacity-70">Feel free to approach us if you have any questions.</p>
       </div>
-      <div class="text-center">
-        <a href="https://www.instagram.com/echoes.iimk/" class="block text-white opacity-70 hover:text-purple-500">
-          <img src="https://img.icons8.com/color/48/instagram-new.png" alt="Instagram" class="mx-auto w-12 h-12">
-          instagram.com/echoes.iimk/
-        </a>
+    
+      <!-- Contact Cards -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+        <!-- Naman Agrawal -->
+        <div class="bg-white shadow-md rounded-lg p-6">
+          <h3 class="text-lg font-semibold mb-2">NAMAN AGRAWAL</h3>
+          <p class="flex items-center mb-2">
+            <span class="material-icons text-gray-500 mr-2">phone</span>
+            +91-8890656549
+          </p>
+          <p class="flex items-center">
+            <span class="material-icons text-gray-500 mr-2">email</span>
+            <a href="mailto:namana27@iimklive.com" class="text-purple-500 hover:underline">namana27@iimklive.com</a>
+          </p>
+        </div>
+    
+        <!-- S Nivetha -->
+        <div class="bg-white shadow-md rounded-lg p-6">
+          <h3 class="text-lg font-semibold mb-2">S NIVETHA</h3>
+          <p class="flex items-center mb-2">
+            <span class="material-icons text-gray-500 mr-2">phone</span>
+            +91-9176318668
+          </p>
+          <p class="flex items-center">
+            <span class="material-icons text-gray-500 mr-2">email</span>
+            <a href="mailto:nivethas27@iimklive.com" class="text-purple-500 hover:underline">nivethas27@iimklive.com</a>
+          </p>
+        </div>
+    
+        <!-- Gunja Agarwal -->
+        <div class="bg-white shadow-md rounded-lg p-6">
+          <h3 class="text-lg font-semibold mb-2">GUNJA AGARWAL</h3>
+          <p class="flex items-center mb-2">
+            <span class="material-icons text-gray-500 mr-2">phone</span>
+            +91-7457818955
+          </p>
+          <p class="flex items-center">
+            <span class="material-icons text-gray-500 mr-2">email</span>
+            <a href="mailto:gunjaa27@iimklive.com" class="text-purple-500 hover:underline">gunjaa27@iimklive.com</a>
+          </p>
+        </div>
+    
+        <!-- Ishita Shukla -->
+        <div class="bg-white shadow-md rounded-lg p-6">
+          <h3 class="text-lg font-semibold mb-2">ISHITA SHUKLA</h3>
+          <p class="flex items-center mb-2">
+            <span class="material-icons text-gray-500 mr-2">phone</span>
+            +91-9354609171
+          </p>
+          <p class="flex items-center">
+            <span class="material-icons text-gray-500 mr-2">email</span>
+            <a href="mailto:ishitas28@iimklive.com" class="text-purple-500 hover:underline">ishitas28@iimklive.com</a>
+          </p>
+        </div>
+    
+        <!-- Tanvi More -->
+        <div class="bg-white shadow-md rounded-lg p-6">
+          <h3 class="text-lg font-semibold mb-2">TANVI MORE</h3>
+          <p class="flex items-center mb-2">
+            <span class="material-icons text-gray-500 mr-2">phone</span>
+            +91-9930554112
+          </p>
+          <p class="flex items-center">
+            <span class="material-icons text-gray-500 mr-2">email</span>
+            <a href="mailto:tanvim28@iimklive.com" class="text-purple-500 hover:underline">tanvim28@iimklive.com</a>
+          </p>
+        </div>
+    
+        <!-- Maniratnn Parakh -->
+        <div class="bg-white shadow-md rounded-lg p-6">
+          <h3 class="text-lg font-semibold mb-2">MANIRATNN PARAKH</h3>
+          <p class="flex items-center mb-2">
+            <span class="material-icons text-gray-500 mr-2">phone</span>
+            +91-8305083028
+          </p>
+          <p class="flex items-center">
+            <span class="material-icons text-gray-500 mr-2">email</span>
+            <a href="mailto:maniratnnp28@iimklive.com" class="text-purple-500 hover:underline">maniratnnp28@iimklive.com</a>
+          </p>
+        </div>
       </div>
-    </div>
-  
-  </section>
+    
+      <!-- Social Links -->
+      <div class="flex flex-col md:flex-row items-center justify-center space-y-10 md:space-y-0 md:space-x-10">
+        <div class="text-center">
+          <a href="mailto:culcom@iimk.ac.in" class="block text-white opacity-70 hover:text-purple-500">
+            <img src="https://img.icons8.com/color/48/gmail-new.png" alt="Gmail" class="mx-auto w-12 h-12">
+            culcom@iimk.ac.in
+          </a>
+        </div>
+        <div class="text-center">
+          <a href="https://www.facebook.com/echoes.iimk/" class="block text-white opacity-70 hover:text-purple-500">
+            <img src="https://img.icons8.com/color/48/facebook-new.png" alt="Facebook" class="mx-auto w-12 h-12">
+            facebook.com/echoes.iimk
+          </a>
+        </div>
+        <div class="text-center">
+          <a href="https://www.instagram.com/echoes.iimk/" class="block text-white opacity-70 hover:text-purple-500">
+            <img src="https://img.icons8.com/color/48/instagram-new.png" alt="Instagram" class="mx-auto w-12 h-12">
+            instagram.com/echoes.iimk/
+          </a>
+        </div>
+      </div>
+    </section>
+    
 
  
 </body>
