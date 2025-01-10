@@ -13,6 +13,7 @@ export default defineConfig({
       input: {
         main: './src/home.html',
         home: './src/home.html',
+        register: './src/register.html',
         contactus: './src/contact-us.html',
         team: './src/team.html'
       }
