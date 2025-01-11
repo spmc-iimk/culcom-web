@@ -795,6 +795,14 @@ video {
   height: 130px;
 }
 
+.h-\[900px\] {
+  height: 900px;
+}
+
+.h-\[400px\] {
+  height: 400px;
+}
+
 .w-1\/2 {
   width: 50%;
 }
@@ -1146,6 +1154,10 @@ video {
   background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
 }
 
+.bg-\[url\(\'images\/section_21\.png\'\)\] {
+  background-image: url('images/section_21.png');
+}
+
 .from-\[\#D66D75\] {
   --tw-gradient-from: #D66D75 var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(214 109 117 / 0) var(--tw-gradient-to-position);
@@ -1237,6 +1249,10 @@ video {
 
 .bg-cover {
   background-size: cover;
+}
+
+.bg-contain {
+  background-size: contain;
 }
 
 .bg-clip-text {
